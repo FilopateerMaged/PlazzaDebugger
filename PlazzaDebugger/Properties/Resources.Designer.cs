@@ -73,9 +73,29 @@ namespace PlazzaDebugger.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cred {
+            get {
+                object obj = ResourceManager.GetObject("Cred", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap firefox_64 {
             get {
                 object obj = ResourceManager.GetObject("firefox-64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hard_drive {
+            get {
+                object obj = ResourceManager.GetObject("hard_drive", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

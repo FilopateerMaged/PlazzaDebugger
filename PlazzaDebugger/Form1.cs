@@ -115,7 +115,9 @@ namespace PlazzaDebugger
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+          
+                
+           
         }
 
         //Fetches file from resources creates a bat file and runs it
@@ -157,6 +159,22 @@ namespace PlazzaDebugger
             MessageBox.Show("Press OK to open Safenet authenitcation client tools and generate a challenge code that you can provide us with on plazza");
             MessageBoxDefaultButton.Button1.Equals("Open safenet authentication client tools");
             PKI.Start();
+        }
+
+        //Closes MSteams then deletes the cache 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("cmd.exe", "/c taskkill /F /T /IM Teams.exe");
+            var appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            var Ms = Path.Combine(appdata, "Microsoft");
+            var teams = Path.Combine(Ms, "Teams");
+            string cache = teams;
+            // If directory does not exist, don't even try   
+            if (Directory.Exists(cache))
+            {
+                Directory.Delete(cache,true);
+            }
+            MessageBox.Show("Teams Cache deleted");
         }
     }
 }
