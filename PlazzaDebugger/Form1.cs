@@ -15,26 +15,34 @@ namespace PlazzaDebugger
 {
     public partial class Form1 : Form
     {
+        private Form activeForm;
         public Form1()
         {
             InitializeComponent();
 
         }
 
+
+        private void Show_form()
+        {
+            //HOME PAGE LOAD
+            Main home = new Main()
+            {
+                TopLevel = false,
+                TopMost = true
+            };
+            home.FormBorderStyle = FormBorderStyle.None;
+            home.Dock = DockStyle.Fill;
+            homePanel.Controls.Add(home);
+            home.Show();
+            ///
+        }
+        
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            Process PcName = new Process
-            {
-                StartInfo = new ProcessStartInfo
-                {
-                    FileName = "cmd.exe",
-                    Arguments = "/C hostname",
-                    UseShellExecute = false,
-                    RedirectStandardOutput = true,
-                    CreateNoWindow = true
-                }
-            };
-
+            Show_form();
+            /// FETCHING AD USERNAME
             Process UserName = new Process
             {
                 StartInfo = new ProcessStartInfo
@@ -59,13 +67,6 @@ namespace PlazzaDebugger
                 label2.Text = "Hello " + username;
             }
 
-            PcName.Start();
-            while (!PcName.StandardOutput.EndOfStream)
-            {
-
-                string name = PcName.StandardOutput.ReadToEnd();
-                label1.Text = "Your PC-Name is:"+ name;
-            }
 
         }
 
@@ -75,18 +76,7 @@ namespace PlazzaDebugger
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Process Pause = new Process
-            {
-               StartInfo = new ProcessStartInfo
-               {
-                   FileName = "cmd.exe",
-                   Arguments ="/C ipconfig /all & Pause"
-               }
-            };
-            Pause.Start();
-        }
+        
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -175,6 +165,17 @@ namespace PlazzaDebugger
                 Directory.Delete(cache,true);
             }
             MessageBox.Show("Teams Cache deleted");
+        }
+       
+        private void Home_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+       
+
+        private void Teams_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
