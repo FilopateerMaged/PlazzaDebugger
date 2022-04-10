@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,6 +58,25 @@ namespace PlazzaDebugger
                 panel1.Controls.Add(network);
                 network.Show();
             network.BringToFront();
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var tmpPath = Path.GetTempPath();
+            try
+            {
+                if (Directory.Exists(tmpPath))
+                {
+                    Directory.Delete(tmpPath,true);
+                }
+            }
+            catch (Exception err)
+            {
+                Console.WriteLine(err);
+            }
+            MessageBox.Show("Temp Files Deleted!");
+
             
         }
     }

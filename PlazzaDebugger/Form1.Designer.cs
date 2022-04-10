@@ -35,8 +35,8 @@ namespace PlazzaDebugger
             this.panel2 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.homePanel = new System.Windows.Forms.Panel();
             this.UsernameLabel = new System.Windows.Forms.Label();
+            this.homePanel = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -98,7 +98,7 @@ namespace PlazzaDebugger
             this.button9.ForeColor = System.Drawing.Color.Transparent;
             this.button9.Image = global::PlazzaDebugger.Properties.Resources.Pki;
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(2, 561);
+            this.button9.Location = new System.Drawing.Point(2, 0);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(183, 56);
             this.button9.TabIndex = 2;
@@ -117,15 +117,6 @@ namespace PlazzaDebugger
             this.panel1.Size = new System.Drawing.Size(815, 83);
             this.panel1.TabIndex = 12;
             // 
-            // homePanel
-            // 
-            this.homePanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.homePanel.Location = new System.Drawing.Point(185, 83);
-            this.homePanel.Name = "homePanel";
-            this.homePanel.Size = new System.Drawing.Size(815, 591);
-            this.homePanel.TabIndex = 13;
-            this.homePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Home_Paint);
-            // 
             // UsernameLabel
             // 
             this.UsernameLabel.AutoSize = true;
@@ -137,6 +128,15 @@ namespace PlazzaDebugger
             this.UsernameLabel.Size = new System.Drawing.Size(451, 86);
             this.UsernameLabel.TabIndex = 5;
             this.UsernameLabel.Text = "AD\\NBHS9355";
+            // 
+            // homePanel
+            // 
+            this.homePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.homePanel.Location = new System.Drawing.Point(185, 83);
+            this.homePanel.Name = "homePanel";
+            this.homePanel.Size = new System.Drawing.Size(815, 591);
+            this.homePanel.TabIndex = 13;
+            this.homePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Home_Paint);
             // 
             // Form1
             // 
