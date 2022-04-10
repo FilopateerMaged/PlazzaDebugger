@@ -64,7 +64,9 @@ namespace PlazzaDebugger
             {
 
                 string username = UserName.StandardOutput.ReadToEnd();
-                label2.Text = "Hello " + username;
+                HelloLabel.Text = "Hello, ";
+                UsernameLabel.Text = username;
+
             }
 
 

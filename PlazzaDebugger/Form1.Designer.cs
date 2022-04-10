@@ -30,28 +30,29 @@ namespace PlazzaDebugger
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label2 = new System.Windows.Forms.Label();
+            this.HelloLabel = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.homePanel = new System.Windows.Forms.Panel();
+            this.UsernameLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
+            // HelloLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(0, -3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(381, 86);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "USER NAME";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.HelloLabel.AutoSize = true;
+            this.HelloLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.HelloLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HelloLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.HelloLabel.Location = new System.Drawing.Point(0, -3);
+            this.HelloLabel.Name = "HelloLabel";
+            this.HelloLabel.Size = new System.Drawing.Size(185, 86);
+            this.HelloLabel.TabIndex = 4;
+            this.HelloLabel.Text = "Hello";
+            this.HelloLabel.Click += new System.EventHandler(this.label2_Click);
             // 
             // button3
             // 
@@ -108,7 +109,8 @@ namespace PlazzaDebugger
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.UsernameLabel);
+            this.panel1.Controls.Add(this.HelloLabel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(185, 0);
             this.panel1.Name = "panel1";
@@ -123,6 +125,18 @@ namespace PlazzaDebugger
             this.homePanel.Size = new System.Drawing.Size(815, 591);
             this.homePanel.TabIndex = 13;
             this.homePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Home_Paint);
+            // 
+            // UsernameLabel
+            // 
+            this.UsernameLabel.AutoSize = true;
+            this.UsernameLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.UsernameLabel.Font = new System.Drawing.Font("Segoe UI", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UsernameLabel.ForeColor = System.Drawing.Color.White;
+            this.UsernameLabel.Location = new System.Drawing.Point(169, -3);
+            this.UsernameLabel.Name = "UsernameLabel";
+            this.UsernameLabel.Size = new System.Drawing.Size(451, 86);
+            this.UsernameLabel.TabIndex = 5;
+            this.UsernameLabel.Text = "AD\\NBHS9355";
             // 
             // Form1
             // 
@@ -148,12 +162,13 @@ namespace PlazzaDebugger
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label HelloLabel;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel homePanel;
+        private System.Windows.Forms.Label UsernameLabel;
     }
 }
 

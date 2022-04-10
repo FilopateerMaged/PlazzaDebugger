@@ -69,6 +69,7 @@ namespace PlazzaDebugger
             this.DNS.Text = "Change DNS to Automatic";
             this.DNS.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.DNS.UseVisualStyleBackColor = false;
+            this.DNS.Click += new System.EventHandler(this.DNS_Click);
             // 
             // Reset
             // 
