@@ -37,6 +37,9 @@ namespace PlazzaDebugger
             this.panel1 = new System.Windows.Forms.Panel();
             this.UsernameLabel = new System.Windows.Forms.Label();
             this.homePanel = new System.Windows.Forms.Panel();
+            this.MPA = new System.Windows.Forms.Button();
+            this.MYTOOLS = new System.Windows.Forms.Button();
+            this.Qualiparc = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +80,9 @@ namespace PlazzaDebugger
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.panel2.Controls.Add(this.Qualiparc);
+            this.panel2.Controls.Add(this.MYTOOLS);
+            this.panel2.Controls.Add(this.MPA);
             this.panel2.Controls.Add(this.button9);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -138,6 +144,60 @@ namespace PlazzaDebugger
             this.homePanel.TabIndex = 13;
             this.homePanel.Paint += new System.Windows.Forms.PaintEventHandler(this.Home_Paint);
             // 
+            // MPA
+            // 
+            this.MPA.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MPA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.MPA.FlatAppearance.BorderSize = 0;
+            this.MPA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.MPA.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MPA.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MPA.ForeColor = System.Drawing.Color.Transparent;
+            this.MPA.Image = global::PlazzaDebugger.Properties.Resources.Pki;
+            this.MPA.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MPA.Location = new System.Drawing.Point(2, 62);
+            this.MPA.Name = "MPA";
+            this.MPA.Size = new System.Drawing.Size(183, 56);
+            this.MPA.TabIndex = 3;
+            this.MPA.Text = "Unlock";
+            this.MPA.UseVisualStyleBackColor = false;
+            // 
+            // MYTOOLS
+            // 
+            this.MYTOOLS.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.MYTOOLS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.MYTOOLS.FlatAppearance.BorderSize = 0;
+            this.MYTOOLS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.MYTOOLS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MYTOOLS.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.MYTOOLS.ForeColor = System.Drawing.Color.Transparent;
+            this.MYTOOLS.Image = global::PlazzaDebugger.Properties.Resources.Pki;
+            this.MYTOOLS.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MYTOOLS.Location = new System.Drawing.Point(0, 124);
+            this.MYTOOLS.Name = "MYTOOLS";
+            this.MYTOOLS.Size = new System.Drawing.Size(183, 56);
+            this.MYTOOLS.TabIndex = 4;
+            this.MYTOOLS.Text = "Unlock";
+            this.MYTOOLS.UseVisualStyleBackColor = false;
+            // 
+            // Qualiparc
+            // 
+            this.Qualiparc.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Qualiparc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.Qualiparc.FlatAppearance.BorderSize = 0;
+            this.Qualiparc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Qualiparc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Qualiparc.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Qualiparc.ForeColor = System.Drawing.Color.Transparent;
+            this.Qualiparc.Image = global::PlazzaDebugger.Properties.Resources.Pki;
+            this.Qualiparc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Qualiparc.Location = new System.Drawing.Point(0, 186);
+            this.Qualiparc.Name = "Qualiparc";
+            this.Qualiparc.Size = new System.Drawing.Size(183, 56);
+            this.Qualiparc.TabIndex = 5;
+            this.Qualiparc.Text = "Unlock";
+            this.Qualiparc.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -169,6 +229,9 @@ namespace PlazzaDebugger
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel homePanel;
         private System.Windows.Forms.Label UsernameLabel;
+        private System.Windows.Forms.Button Qualiparc;
+        private System.Windows.Forms.Button MYTOOLS;
+        private System.Windows.Forms.Button MPA;
     }
 }
 

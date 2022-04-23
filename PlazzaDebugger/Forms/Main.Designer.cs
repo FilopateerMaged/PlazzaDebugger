@@ -34,7 +34,7 @@ namespace PlazzaDebugger
             this.Network = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Delete_Temp = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -112,23 +112,23 @@ namespace PlazzaDebugger
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // Delete_Temp
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button4.Image = global::PlazzaDebugger.Properties.Resources.trash;
-            this.button4.Location = new System.Drawing.Point(530, 219);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(241, 120);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Delete Temp Files";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.Delete_Temp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.Delete_Temp.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Delete_Temp.FlatAppearance.BorderSize = 0;
+            this.Delete_Temp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.Delete_Temp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Delete_Temp.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Delete_Temp.Image = global::PlazzaDebugger.Properties.Resources.trash;
+            this.Delete_Temp.Location = new System.Drawing.Point(530, 219);
+            this.Delete_Temp.Name = "Delete_Temp";
+            this.Delete_Temp.Size = new System.Drawing.Size(241, 120);
+            this.Delete_Temp.TabIndex = 11;
+            this.Delete_Temp.Text = "Delete Temp Files";
+            this.Delete_Temp.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Delete_Temp.UseVisualStyleBackColor = false;
+            this.Delete_Temp.Click += new System.EventHandler(this.Delete_Temp_Click);
             // 
             // button5
             // 
@@ -174,7 +174,7 @@ namespace PlazzaDebugger
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Delete_Temp);
             this.Controls.Add(this.Network);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
@@ -194,7 +194,7 @@ namespace PlazzaDebugger
         private System.Windows.Forms.Button Network;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button Delete_Temp;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
     }

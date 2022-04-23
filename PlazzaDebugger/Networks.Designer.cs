@@ -29,6 +29,7 @@ namespace PlazzaDebugger
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Back));
             this.TEC = new System.Windows.Forms.Button();
             this.DNS = new System.Windows.Forms.Button();
             this.Reset = new System.Windows.Forms.Button();
@@ -43,7 +44,7 @@ namespace PlazzaDebugger
             this.TEC.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.TEC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.TEC.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.TEC.Image = global::PlazzaDebugger.Properties.Resources.Network;
+            this.TEC.Image = global::PlazzaDebugger.Properties.Resources.TEC;
             this.TEC.Location = new System.Drawing.Point(569, 75);
             this.TEC.Name = "TEC";
             this.TEC.Size = new System.Drawing.Size(241, 120);
@@ -61,7 +62,7 @@ namespace PlazzaDebugger
             this.DNS.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.DNS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DNS.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.DNS.Image = global::PlazzaDebugger.Properties.Resources.Network;
+            this.DNS.Image = ((System.Drawing.Image)(resources.GetObject("DNS.Image")));
             this.DNS.Location = new System.Drawing.Point(37, 75);
             this.DNS.Name = "DNS";
             this.DNS.Size = new System.Drawing.Size(241, 120);
@@ -90,18 +91,17 @@ namespace PlazzaDebugger
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.button1.BackColor = System.Drawing.Color.Transparent;
             this.button1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Image = global::PlazzaDebugger.Properties.Resources.Network;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Image = global::PlazzaDebugger.Properties.Resources.home;
             this.button1.Location = new System.Drawing.Point(2, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 52);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Change DNS to Automatic";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

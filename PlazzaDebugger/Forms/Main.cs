@@ -61,7 +61,7 @@ namespace PlazzaDebugger
             
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Delete_Temp_Click(object sender, EventArgs e)
         {
             var tmpPath = Path.GetTempPath();
             try
