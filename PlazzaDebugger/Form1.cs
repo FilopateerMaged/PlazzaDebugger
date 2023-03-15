@@ -38,6 +38,8 @@ namespace PlazzaDebugger
             ///
         }
         
+        //___________________When form loads it checks for FTID using the whoami command __________________________
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -58,6 +60,8 @@ namespace PlazzaDebugger
 
 
             };
+
+            // _______________________ This Displays the username that the previous step fetched_______________________
 
             UserName.Start();
             while (!UserName.StandardOutput.EndOfStream)
@@ -94,7 +98,8 @@ namespace PlazzaDebugger
         {
 
         }
-        // OBS IT SUPPORT LINK 
+
+        //__________________________________ OBS IT SUPPORT LINK __________________________________________________
         private void button3_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("explorer","https://plazza.orange.com/community/it-support/obs-it-support");
@@ -137,6 +142,10 @@ namespace PlazzaDebugger
             proc.WaitForExit();
             proc.Close();
         }
+        
+        
+        // _____________________ This starts the "Safenet client tools" to unlock the PKI __________________
+
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -176,6 +185,11 @@ namespace PlazzaDebugger
        
 
         private void Teams_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Qualiparc_Click(object sender, EventArgs e)
         {
 
         }

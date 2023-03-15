@@ -32,7 +32,7 @@ namespace PlazzaDebugger
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Network = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.teams_cache = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.Delete_Temp = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -78,22 +78,23 @@ namespace PlazzaDebugger
             this.Network.UseVisualStyleBackColor = false;
             this.Network.Click += new System.EventHandler(this.Network_Click);
             // 
-            // button2
+            // teams_cache
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button2.Image = global::PlazzaDebugger.Properties.Resources.teams;
-            this.button2.Location = new System.Drawing.Point(269, 78);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(241, 120);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Microsoft Teams";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = false;
+            this.teams_cache.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(0)))));
+            this.teams_cache.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.teams_cache.FlatAppearance.BorderSize = 0;
+            this.teams_cache.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Black;
+            this.teams_cache.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.teams_cache.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.teams_cache.Image = global::PlazzaDebugger.Properties.Resources.teams;
+            this.teams_cache.Location = new System.Drawing.Point(269, 78);
+            this.teams_cache.Name = "teams_cache";
+            this.teams_cache.Size = new System.Drawing.Size(241, 120);
+            this.teams_cache.TabIndex = 7;
+            this.teams_cache.Text = "Microsoft Teams";
+            this.teams_cache.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.teams_cache.UseVisualStyleBackColor = false;
+            this.teams_cache.Click += new System.EventHandler(this.teams_cache_Click);
             // 
             // button3
             // 
@@ -111,6 +112,7 @@ namespace PlazzaDebugger
             this.button3.Text = "Tools not working on browser";
             this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Delete_Temp
             // 
@@ -176,7 +178,7 @@ namespace PlazzaDebugger
             this.Controls.Add(this.button5);
             this.Controls.Add(this.Delete_Temp);
             this.Controls.Add(this.Network);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.teams_cache);
             this.Controls.Add(this.button3);
             this.Name = "Main";
             this.ShowInTaskbar = false;
@@ -192,7 +194,7 @@ namespace PlazzaDebugger
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Network;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button teams_cache;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button Delete_Temp;
         private System.Windows.Forms.Button button5;

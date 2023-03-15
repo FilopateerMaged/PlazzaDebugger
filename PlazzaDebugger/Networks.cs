@@ -31,7 +31,12 @@ namespace PlazzaDebugger
         }
 
 
-
+        //_______________________ Resetting DNS to Automatic_________________________________________________
+            // This Searches for the active network adapter
+            // checks for the DNS sever 
+            // there are two functions one that can set a specified DNS 
+            // And one to return it to automatic
+            // This only works in Elevated mode (Debugger Run as ADMIN) as discussed with Yves Hamard
 
         public static NetworkInterface GetActiveEthernetOrWifiNetworkInterface()
         {
